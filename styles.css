@@ -1,0 +1,183 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #ffffff; /* Set background to white */
+    color: #333; /* Adjust text color for readability on white */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: #ffffff; /* White text for contrast */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.search-bar input {
+    padding: 5px;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* White text for the dark header */
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+footer {
+    background: #f1f1f1; /* Light gray for footer to distinguish from body */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9; /* Light gray for contrast */
+    color: #333;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero button {
+    background: #ff6600;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #333;
+    color: #ffffff;
+}
+
+/* Shop Page Styles */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background: #ffffff; /* Ensure consistent background */
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background: #ffffff; /* Ensure consistent background */
+    color: #333;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card button {
+    background: #ff6600;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background: #333;
+    color: #ffffff;
+}
+
+/* Contact Page Styles */
+.contact-banner {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9; /* Light gray for contrast */
+    color: #333;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background: #ff6600;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background: #333;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 30px 10px;
+    }
+}
